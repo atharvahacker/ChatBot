@@ -43,7 +43,7 @@ async def _(event):
   me = await event.client.get_me()
   nice = await alain(GetFullUserRequest(event.sender_id))
   sed = [[Button.inline(f"My Master 👉.", data="owner")]]
-  wlcm_text = f"**Hi {nice.user.first_name}, I'm {me.first_name}..!\nYou can contact my master through this bot\n\nThis bot was made by @Alain_xD**"
+  wlcm_text = f"**Hi {nice.user.first_name}, I'm {me.first_name}..!\nYou can contact my master through this bot\n\nThis bot was made by @Atharv_D**"
   so = await event.reply(wlcm_text, buttons=sed)
 
 @alain.on(events.callbackquery.CallbackQuery(data=re.compile(b"owner")))
